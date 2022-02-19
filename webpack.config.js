@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 /**
  * @type {import('webpack').Configuration}
@@ -11,6 +12,12 @@ const config = {
   output: {
     filename: "[name].bundle.js",
     path: __dirname + "/dist",
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
   module: {
     rules: [

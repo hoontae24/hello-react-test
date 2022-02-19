@@ -1,5 +1,8 @@
-console.log("Hello World");
+import React from "react";
+import ReactDOM from "react-dom";
 
-const content: string = "<h1>Hello World</h1>";
+import App from "./App";
 
-document.body.innerHTML += content;
+const root = document.getElementById("root");
+
+ReactDOM.render(React.createElement(App), root);
