@@ -1,7 +1,8 @@
 import { fireEvent, render } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
-import TodoItem, { Todo, TodoItemProps } from "@/components/TodoItem";
+import { Todo } from "@/components/todo";
+import TodoItem, { TodoItemProps } from "@/components/TodoItem";
 
 describe("TodoItem />", () => {
   const sampleTodo: Todo = {

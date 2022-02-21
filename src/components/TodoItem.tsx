@@ -1,10 +1,6 @@
 import { useCallback, VFC } from "react";
 
-export interface Todo {
-  id: number;
-  text: string;
-  done: boolean;
-}
+import { Todo } from "@/components/todo";
 
 export interface TodoItemProps {
   todo: Todo;
