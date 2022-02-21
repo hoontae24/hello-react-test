@@ -12,7 +12,7 @@ export interface TodoListProps {
 const TodoList: VFC<TodoListProps> = (props) => {
   const { todos, onToggle, onRemove } = props;
   return (
-    <ul>
+    <ul data-testid="TodoList">
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}
